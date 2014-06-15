@@ -3,6 +3,7 @@ package fr.mouarius.mwe.block;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.mouarius.mwe.MadeWithExperience;
+import fr.mouarius.mwe.client.DamageAskExperience;
 import fr.mouarius.mwe.client.particle.EntityXPDustFX;
 import fr.mouarius.mwe.helper.RegisterHelper;
 import fr.mouarius.mwe.init.ModBlocks;
@@ -13,6 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.util.DamageSource;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -42,8 +44,8 @@ public class BlockEssenceOre extends BlockMWE{
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p6, float p7, float p8, float p9)
     {
-        //world.spawnEntityInWorld(new EntityXPOrb(world, player.posX, player.posY, player.posZ, 100));
         player.addExperience(20);
+        player.attackEntityFrom(DamageAskExperience.damageAskExperience, 2.0F);
         return true;
     }
 
