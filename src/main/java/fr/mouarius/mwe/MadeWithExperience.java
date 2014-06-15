@@ -17,10 +17,11 @@ import net.minecraft.creativetab.CreativeTabs;
  * Minecraft mod
  *
  * @author Mouarius
- * @license GNU Lesser General Public License v2
- *          (http://www.gnu.org/licenses/lgpl.html)
+ * @license GNU General Public License v3
+ *          (http://www.gnu.org/licenses/gpl.html)
  * @copyright Copyright (C) 2014  Mouarius
  */
+
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class MadeWithExperience {
 

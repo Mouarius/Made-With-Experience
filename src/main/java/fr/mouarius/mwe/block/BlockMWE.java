@@ -8,15 +8,7 @@ package fr.mouarius.mwe.block;
         import net.minecraft.block.material.Material;
         import net.minecraft.client.renderer.texture.IIconRegister;
 
-/**
- * Made With Experience
- * Minecraft mod
- *
- * @author Mouarius
- * @license GNU Lesser General Public License v2
- * (http://www.gnu.org/licenses/lgpl.html)
- * @copyright Copyright (C) 2014  Mouarius
- */
+
 public class BlockMWE extends Block {
 
 

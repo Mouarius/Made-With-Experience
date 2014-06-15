@@ -8,15 +8,6 @@ import net.minecraft.client.particle.EntityFX;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.world.World;
 
-/**
- * Made With Experience
- * Minecraft mod
- *
- * @author Mouarius
- * @license GNU Lesser General Public License v2
- * (http://www.gnu.org/licenses/lgpl.html)
- * @copyright Copyright (C) 2014  Mouarius
- */
 @SideOnly(Side.CLIENT)
 public class EntityXPDustFX extends EntityFX {
     float XPDustParticleScale;
