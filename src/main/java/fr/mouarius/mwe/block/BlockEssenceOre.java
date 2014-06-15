@@ -2,19 +2,12 @@ package fr.mouarius.mwe.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import fr.mouarius.mwe.MadeWithExperience;
 import fr.mouarius.mwe.client.DamageAskExperience;
 import fr.mouarius.mwe.client.particle.EntityXPDustFX;
-import fr.mouarius.mwe.helper.RegisterHelper;
-import fr.mouarius.mwe.init.ModBlocks;
 import fr.mouarius.mwe.init.ModItems;
 import fr.mouarius.mwe.reference.Names;
-import fr.mouarius.mwe.reference.Reference;
-import net.minecraft.block.material.Material;
-import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.util.DamageSource;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
