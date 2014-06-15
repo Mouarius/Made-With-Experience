@@ -1,0 +1,10 @@
+#Block Names
+tile.mwe:essence_ore.name=Essence Ore
+
+#Misc
+itemGroup.made_with_experience=Made With Experience
+
+#Item Names
+item.mwe:experience_essence.name=Experience Essence
+item.mwe:essence_ingot.name=Essence Ingot
+item.mwe:essence_pickaxe.name=Essence Pickaxe

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mwe",
+  "name": "Made With Experience",
+  "description": "Nothing for now",
+  "version": "${VERSION}",
+  "mcversion": "1.7.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mouarius"],
+  "credits": "Nothing for now",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
