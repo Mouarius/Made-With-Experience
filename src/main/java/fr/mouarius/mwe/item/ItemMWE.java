@@ -3,14 +3,10 @@ package fr.mouarius.mwe.item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.mouarius.mwe.MadeWithExperience;
-import fr.mouarius.mwe.helper.RegisterHelper;
-import fr.mouarius.mwe.reference.Names;
 import fr.mouarius.mwe.reference.Textures;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import org.omg.CosNaming.NameHelper;
 
 public class ItemMWE extends Item {
 
