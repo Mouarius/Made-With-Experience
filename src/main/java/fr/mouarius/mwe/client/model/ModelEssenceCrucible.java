@@ -27,6 +27,7 @@ public class ModelEssenceCrucible extends ModelBase
     ModelRenderer Back;
     ModelRenderer Left;
     ModelRenderer Right;
+    ModelRenderer LiquidHeight;
   
   public ModelEssenceCrucible()
   {
@@ -87,6 +88,12 @@ public class ModelEssenceCrucible extends ModelBase
       Right.setTextureSize(64, 64);
       Right.mirror = true;
       setRotation(Right, 0F, 0F, 0F);
+      LiquidHeight = new ModelRenderer(this, 0, 50);
+      LiquidHeight.addBox(0F, 0F, 0F, 16, 13, 1);
+      LiquidHeight.setRotationPoint(-8F, 8F, 7F);
+      LiquidHeight.setTextureSize(64, 64);
+      LiquidHeight.mirror = true;
+      setRotation(LiquidHeight, 0F, 0F, 0F);
   }
   
   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)

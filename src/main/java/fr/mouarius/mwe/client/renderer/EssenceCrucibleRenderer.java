@@ -32,9 +32,10 @@ public class EssenceCrucibleRenderer extends TileEntitySpecialRenderer {
     public void renderEssenceCrucibleModelAt(EssenceCrucibleTileEntity tileentity1, double d, double d1, double d2, float f)
     {
         GL11.glPushMatrix();
-        GL11.glTranslatef((float)d + 0.5F, (float)d1 + 0.5F, (float)d2 + 0.5F);
+        GL11.glTranslatef((float)d + 0.5F, (float)d1 + 1.5F, (float)d2 + 0.5F);
         this.bindTexture(texture);
         GL11.glPushMatrix();
+        GL11.glRotatef(180F,0F,0F,0F);
         model.renderModel(0.0625F);
         GL11.glPopMatrix();
         GL11.glPopMatrix();
