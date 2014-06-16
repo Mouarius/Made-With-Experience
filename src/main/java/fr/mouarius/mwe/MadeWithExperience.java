@@ -41,7 +41,8 @@ public class MadeWithExperience {
     }
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event){
-
+        proxy.registerTileEntities();
+        proxy.registerRenderingThings();
     }
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event){

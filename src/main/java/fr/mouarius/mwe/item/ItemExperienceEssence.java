@@ -7,7 +7,7 @@ import net.minecraft.world.World;
 
 public class ItemExperienceEssence extends ItemMWE{
     public ItemExperienceEssence(){
-        this.setUnlocalizedName(Names.Item.experience_essence);
+        this.setUnlocalizedName(Names.Item.EXPERIENCE_ESSENCE);
     }
 
     @Override

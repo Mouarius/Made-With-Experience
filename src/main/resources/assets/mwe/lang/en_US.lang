@@ -1,5 +1,6 @@
 #Block Names
 tile.mwe:essence_ore.name=Essence Ore
+tile.mwe:essence_crucible.name=Essence Crucible
 
 #Misc
 itemGroup.made_with_experience=Made With Experience

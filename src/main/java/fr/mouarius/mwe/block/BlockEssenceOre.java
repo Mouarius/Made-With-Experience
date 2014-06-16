@@ -20,7 +20,7 @@ public class BlockEssenceOre extends BlockMWE{
     {
         this.setHardness(10.0F);
         this.setHarvestLevel("pickaxe", 3);
-        this.setBlockName(Names.Block.essence_ore);
+        this.setBlockName(Names.Block.ESSENCE_ORE);
         this.setTickRandomly(true);
     }
 

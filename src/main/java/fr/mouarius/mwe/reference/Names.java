@@ -11,10 +11,11 @@ package fr.mouarius.mwe.reference;
  */
 public class Names {
     public class Block{
-        public static final String essence_ore = "essence_ore";
+        public static final String ESSENCE_ORE = "essence_ore";
+        public static final String ESSENCE_CRUCIBLE = "essence_crucible";
     }
     public class Item{
-        public static final String experience_essence = "experience_essence";
-        public static final String essence_ingot = "essence_ingot";
-        public static final String essence_pickaxe = "essence_pickaxe";    }
+        public static final String EXPERIENCE_ESSENCE = "experience_essence";
+        public static final String ESSENCE_INGOT = "ESSENCE_INGOT";
+        public static final String ESSENCE_PICKAXE = "ESSENCE_PICKAXE";    }
 }

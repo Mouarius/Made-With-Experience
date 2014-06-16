@@ -17,13 +17,13 @@ public class ItemMWE extends Item {
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESSOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack)
     {
-        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESSOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {

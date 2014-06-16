@@ -19,7 +19,7 @@ public class BlockMWE extends Block {
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("tile.%s%s", Textures.RESSOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
     @Override
     @SideOnly(Side.CLIENT)
@@ -28,7 +28,7 @@ public class BlockMWE extends Block {
         blockIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    public String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
