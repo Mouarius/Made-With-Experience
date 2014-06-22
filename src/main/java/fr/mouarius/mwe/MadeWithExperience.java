@@ -25,6 +25,8 @@ import net.minecraft.creativetab.CreativeTabs;
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class MadeWithExperience {
 
+    @Mod.Instance
+    
     public static CreativeTabs madeWithExperienceTab = new MWECreativeTab("made_with_experience");
 
 
