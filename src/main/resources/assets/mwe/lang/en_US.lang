@@ -1,6 +1,8 @@
 #Block Names
 tile.mwe:essence_ore.name=Essence Ore
-tile.mwe:essence_crucible.name=Essence Crucible
+tile.mwe:experience_extractor_off.name=Experience Extractor
+tile.mwe:experience_extractor_on.name=Experience Extractor
+
 
 #Misc
 itemGroup.made_with_experience=Made With Experience
