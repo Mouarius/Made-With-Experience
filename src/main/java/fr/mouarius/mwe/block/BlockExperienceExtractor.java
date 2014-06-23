@@ -10,6 +10,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 
 public class BlockExperienceExtractor extends BlockContainer {
@@ -38,11 +39,12 @@ public class BlockExperienceExtractor extends BlockContainer {
             return true;
         }
         else{
-            ExperienceExtractorTileEntity tileEntity = (ExperienceExtractorTileEntity)world.getTileEntity(x,y,z);
-            if (tileEntity != null)
-            {
-                player.openGui(MadeWithExperience.instance, 1, world, x, y, z);
-            }
+//            ExperienceExtractorTileEntity tileEntity = (ExperienceExtractorTileEntity)world.getTileEntity(x,y,z);
+//            if (tileEntity != null)
+//            {
+//                player.openGui(MadeWithExperience.instance, 1, world, x, y, z);
+//            }
+            player.addChatComponentMessage(new ChatComponentText("Essai"));
             return true;
         }
     }
