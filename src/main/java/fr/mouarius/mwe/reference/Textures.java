@@ -19,6 +19,11 @@ public class Textures {
     /* BLOCKS */
     public static final String BLOCK_RESSOURCE_LOCATION =RESSOURCE_PREFIX + "textures/blocks/";
     public static final String ESSENCE_ORE = BLOCK_RESSOURCE_LOCATION + "essence_ore.png";
+    public static final String EXPERIENCE_EXTRACTOR_SIDE = BLOCK_RESSOURCE_LOCATION + "experience_extractor_side.png";
+    public static final String EXPERIENCE_EXTRACTOR_FRONT_OFF = BLOCK_RESSOURCE_LOCATION + "experience_extractor_front_off.png";
+    public static final String EXPERIENCE_EXTRACTOR_FRONT_ON = BLOCK_RESSOURCE_LOCATION + "experience_extractor_front_on.png";
+    public static final String EXPERIENCE_EXTRACTOR_TOP = BLOCK_RESSOURCE_LOCATION + "experience_extractor_top.png";
+
 
     /* MODELS */
     public static final String MODEL_RESSOURCE_LOCATION = "textures/models/";
