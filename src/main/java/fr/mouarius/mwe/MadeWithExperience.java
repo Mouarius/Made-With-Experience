@@ -5,10 +5,11 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import fr.mouarius.mwe.configuration.ConfigurationHandler;
 import fr.mouarius.mwe.init.MWECreativeTab;
 import fr.mouarius.mwe.init.ModBlocks;
 import fr.mouarius.mwe.init.ModItems;
-import fr.mouarius.mwe.proxy.CommonProxy;
+import fr.mouarius.mwe.proxy.IProxy;
 import fr.mouarius.mwe.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -32,20 +33,20 @@ public class MadeWithExperience {
 
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_LOCATION, serverSide = Reference.SERVER_PROXY_LOCATION)
-    public static CommonProxy proxy;
+    public static IProxy proxy;
 
     @Mod.Instance(Reference.MOD_ID)
     MadeWithExperience mwe;
 
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event){
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         ModItems.init();
         ModBlocks.init();
     }
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event){
         proxy.registerTileEntities();
-        proxy.registerRenderingThings();
     }
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event){

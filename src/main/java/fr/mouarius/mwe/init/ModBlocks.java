@@ -1,21 +1,22 @@
 package fr.mouarius.mwe.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import fr.mouarius.mwe.MadeWithExperience;
 import fr.mouarius.mwe.block.BlockEssenceOre;
 import fr.mouarius.mwe.block.BlockExperienceExtractor;
 import fr.mouarius.mwe.block.BlockMWE;
 import fr.mouarius.mwe.reference.Names;
-import net.minecraft.block.BlockContainer;
+import net.minecraft.block.Block;
 
 public class ModBlocks {
     public static BlockMWE essence_ore;
-    public static BlockContainer experience_extractor_off;
-    public static BlockContainer experience_extractor_on;
+    public static Block experience_extractor_off;
+    public static Block experience_extractor_on;
 
     public static void init()
     {
         essence_ore = new BlockEssenceOre();
-        experience_extractor_off = new BlockExperienceExtractor(false);
+        experience_extractor_off = new BlockExperienceExtractor(false).setCreativeTab(MadeWithExperience.madeWithExperienceTab);
         experience_extractor_on = new BlockExperienceExtractor(true);
 
         GameRegistry.registerBlock(essence_ore, Names.Block.ESSENCE_ORE);

@@ -7,7 +7,7 @@ public class Reference {
     public static final String MOD_NAME = "Made With Experience";
     public static final String VERSION = "1.0";
     public static final String CLIENT_PROXY_LOCATION = "fr.mouarius.mwe.proxy.ClientProxy";
-    public static final String SERVER_PROXY_LOCATION = "fr.mouarius.mwe.proxy.CommonProxy";
+    public static final String SERVER_PROXY_LOCATION = "fr.mouarius.mwe.proxy.ServerProxy";
 
 
 }
