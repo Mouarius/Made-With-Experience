@@ -36,8 +36,6 @@ public class MadeWithExperience {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_LOCATION, serverSide = Reference.SERVER_PROXY_LOCATION)
     public static IProxy proxy;
 
-    @Mod.Instance(Reference.MOD_ID)
-    MadeWithExperience mwe;
 
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event){
