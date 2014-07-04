@@ -1,11 +1,12 @@
 package fr.mouarius.mwe;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import fr.mouarius.mwe.configuration.ConfigurationHandler;
+import fr.mouarius.mwe.handler.ConfigurationHandler;
 import fr.mouarius.mwe.init.MWECreativeTab;
 import fr.mouarius.mwe.init.ModBlocks;
 import fr.mouarius.mwe.init.ModItems;
@@ -23,7 +24,7 @@ import net.minecraft.creativetab.CreativeTabs;
  * @copyright Copyright (C) 2014  Mouarius
  */
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_LOCATION)
 public class MadeWithExperience {
 
     @Mod.Instance(Reference.MOD_ID)
@@ -41,6 +42,7 @@ public class MadeWithExperience {
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event){
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ModItems.init();
         ModBlocks.init();
     }
